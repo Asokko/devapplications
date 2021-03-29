@@ -1,29 +1,27 @@
 const fs=require('fs');
 const carbone =require('carbone');
 
+carbone.set({
+    lang:'ru',
+    timezone:'Europe/Moscow'
+});
+
 const data={
     contractNumber:12,
-    date:{
-        day:'26',
-        mounth:'03',
-        yearLastNumber:'1'
-    },
-    actDate:{
-        day:'27',
-        mounth:'03',
-        yearLastNumber:'1'
-    },
+    date:'2021-03-26',
+    actDate:'2021-03-27',
     person:{
         name:'Иванов',
         secondName:'Денис',
         patronymic:'Семенович',
-        dateOfBorn:'22.06.1987',
-        passport:'Паспорт ТП УФМС России по УР',
-        dateOfIssue:'14.06.2012',
+        dateOfBorn:'1987-06-22',
+        passport:'ТП УФМС России по УР',
+        dateOfIssue:'2012-06-14',
         INN:'123456789012',
         BIK:'043999999',
         acct:'40817810024325532124',
         ks:'30101810200234535355',
+        registered:'2021-02-11',
         taxInspectorate:'Межрайонаая инспекция федеральной налоговой службы №111 по УР',
         mailAddress:'Россия, УР, г. Ижевск, ул. Пушкинская д.38',
         phoneNumber:'88888888888',
@@ -34,15 +32,10 @@ const data={
         duty:'генератора документа по шаблону',
         require1:'Список заявок на разработку ПО',
         require2:'Форма ввода заявки на разработку ПО',
-        require3:'Генератор договора возмездного оказания услуг по шаблону ',
+        require3:'Генератор договора возмездного оказания услуг по шаблону',
         require4:'Генератор акта сдачи-приемки оказанных услуг по шаблону',
-        dateOfStart:'11.02.2021',
-        dataOfEnd:'13.03.2021',
-        dayStart:'11',
-        mounthStart:'февраля',
-        dayEnd:'13',
-        mounthEnd:'марта',
-        yearLastNumber:'1',
+        dateOfStart:'2021-02-11',
+        dateOfEnd:'2021-03-13',
     },
     accomplished:{
         service1:'реализация сервиса хранения данных',
