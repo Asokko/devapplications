@@ -59,9 +59,9 @@ const data={
     }
 }
 
-carbone.render('./templates/contract_onetime.odt', data, function(err, result){
+carbone.render('./templates/test.odt', data, function(err, result){
     if(err){
         return console.log(err);
     }
-    fs.writeFileSync('result.odt', result);
+    fs.writeFileSync('res.odt', result);
 });
